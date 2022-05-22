@@ -6,18 +6,25 @@ const LINK_BUTTON_OFFSET = 10;
 
 //This is a combination of label/color used for coloring the boxes. Feel free to change this, it will modify the colors everywhere.
 const boxColors = {
-    brand: "rgb(170,0,0)",
-    loc: "rgb(170,80,13)",
-    pers: "rgb(170,153,21)",
-    total: "rgb(103,170,0)",
-    date: "rgb(29,170,5)",
-    label: "rgb(24,170,135)",
-    price: "rgb(36,124,170)",
-    bundle: "rgb(0,51,170)",
-    phone: "rgb(49,0,170)",
-    misc: "rgb(116,0,170)",
-    payment: "rgb(0,0,0)",
-    barcode: "rgb(63,62,64)",
+    invoice_no: "rgb(170,0,0)",
+    invoice_date: "rgb(170,0,0)",
+    supplier_name: "rgb(170,80,13)",
+    supplier_address: "rgb(170,80,13)",
+    supplier_phone: "rgb(170,80,13)",
+    supplier_mail: "rgb(170,80,13)",
+    receiver_name: "rgb(170,153,21)",
+    receiver_address: "rgb(170,153,21)",
+    receiver_phone: "rgb(170,153,21)",
+    receiver_name: "rgb(170,153,21)",
+    lineItem_quantity: "rgb(103,170,0)",
+    lineItem_unitPrice: "rgb(103,170,0)",
+    lineItem_totalPrice: "rgb(103,170,0)",
+    lineItem_discount: "rgb(103,170,0)",
+    lineItem_description: "rgb(103,170,0)",
+    currency: "rgb(29,170,5)",
+    net_amount: "rgb(24,170,135)",
+    vat: "rgb(36,124,170)",
+    total: "rgb(0,51,170)",
 }
 
 fabric.Object.prototype.borderScaleFactor = 2
@@ -176,18 +183,26 @@ export default class BoxService {
                         <label for="label">Type</label>
                         <select class="uk-select uk-form-small" id='label-${box.box.id}' name="label">
                         <option value=""></option>
-                        <option value="brand">Brand</option>
-                        <option value="loc">Location</option>
-                        <option value="pers">Person</option>
-                        <option value="total">Total</option>
-                        <option value="date">Date</option>
-                        <option value="label">Label</option>
-                        <option value="price">Price</option>
-                        <option value="bundle">Bundle</option>
-                        <option value="phone">Phone</option>
-                        <option value="misc">Misc</option>
-                        <option value="payment">Payment</option>
-                        <option value="barcode">Barcode</option>
+                        <option value="invoice_no">Invoice Number</option>
+                        <option value="invoice_date">Invoice Date</option>
+                        <option value="supplier_name">Supplier Name</option>
+                        <option value="supplier_address">Supplier Address</option>
+                        <option value="supplier_phone">Supplier Phone</option>
+                        <option value="supplier_mail">Supplier Mail</option>
+                        <option value="receiver_name">Receiver Name</option>
+                        <option value="receiver_address">Receiver Address</option>
+                        <option value="receiver_phone">Receiver Phone</option>
+                        <option value="receiver_mail">Receiver Mail</option>
+                        <option value="lineItem_quantity">Line Item Quantity</option>
+                        <option value="lineItem_unitPrice">Line Item Unit Price</option>
+                        <option value="lineItem_totalPrice">Line Item Total Price</option>
+                        <option value="lineItem_discount">Line Item Discount</option>
+                        <option value="lineItem_description">Line Item Description</option>
+                        <option value="currency">Currency</option>
+                        <option value="net_amount">Net Amount</option>
+                        <option value="vat">VAT</option>
+                        <option value="total">Total Amount</option>
+
                         </select>
                     </div>
                     <div>

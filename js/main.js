@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     BoxService.changeLabel(State.selectedBoxId, "price")
                     break
                 case "digit3":
-                    BoxService.changeLabel(State.selectedBoxId, "bundle")
+                    BoxService.changeLabel(State.selectedBoxId, "lineItem")
                     break
                 case "digit4":
                     BoxService.changeLabel(State.selectedBoxId, "misc")
