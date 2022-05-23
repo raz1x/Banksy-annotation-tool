@@ -16,11 +16,11 @@ const boxColors = {
     receiver_address: "rgb(170,153,21)",
     receiver_phone: "rgb(170,153,21)",
     receiver_name: "rgb(170,153,21)",
-    lineItem_quantity: "rgb(103,170,0)",
-    lineItem_unitPrice: "rgb(103,170,0)",
-    lineItem_totalPrice: "rgb(103,170,0)",
-    lineItem_discount: "rgb(103,170,0)",
-    lineItem_description: "rgb(103,170,0)",
+    lineitem_quantity: "rgb(103,170,0)",
+    lineitem_unitprice: "rgb(103,170,0)",
+    lineitem_totalprice: "rgb(103,170,0)",
+    lineitem_discount: "rgb(103,170,0)",
+    lineitem_description: "rgb(103,170,0)",
     currency: "rgb(29,170,5)",
     net_amount: "rgb(24,170,135)",
     vat: "rgb(36,124,170)",
@@ -193,11 +193,11 @@ export default class BoxService {
                         <option value="receiver_address">Receiver Address</option>
                         <option value="receiver_phone">Receiver Phone</option>
                         <option value="receiver_mail">Receiver Mail</option>
-                        <option value="lineItem_quantity">Line Item Quantity</option>
-                        <option value="lineItem_unitPrice">Line Item Unit Price</option>
-                        <option value="lineItem_totalPrice">Line Item Total Price</option>
-                        <option value="lineItem_discount">Line Item Discount</option>
-                        <option value="lineItem_description">Line Item Description</option>
+                        <option value="lineitem_quantity">Line Item Quantity</option>
+                        <option value="lineitem_unitprice">Line Item Unit Price</option>
+                        <option value="lineitem_totalprice">Line Item Total Price</option>
+                        <option value="lineitem_discount">Line Item Discount</option>
+                        <option value="lineitem_description">Line Item Description</option>
                         <option value="currency">Currency</option>
                         <option value="net_amount">Net Amount</option>
                         <option value="vat">VAT</option>
