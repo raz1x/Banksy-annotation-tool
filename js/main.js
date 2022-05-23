@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if  (State.selectedBoxId !== null) {
             switch (e.code.toLowerCase()) {
                 case "delete":
-                case "backspace":
                     BoxService.deleteBox(State.selectedBoxId)
                     State.canvas.historySaveAction()
                     break
